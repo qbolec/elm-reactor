@@ -53,7 +53,7 @@ source-repository head
 
 Executable elm-reactor
   ghc-options:
-    -threaded -O2 -W
+    -threaded -O2 -W -fprof-auto "-with-rtsopts=-N -p -s -h -i0.1"
 
   hs-source-dirs:
     backend
